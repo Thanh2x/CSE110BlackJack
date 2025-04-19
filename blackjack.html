@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack Starter</title>
+    <link rel="stylesheet" href="blackjackstyle.css" />
+</head>
+
+<body>
+
+    <h1>🃏 Blackjack Mini Game</h1>
+
+    <div id="dealer-area">
+        <h2>Dealer's Cards</h2>
+        <div class="card-row">
+            <div class="card">[?]</div>
+            <div class="card">[1 ♥]</div>
+        </div>
+    </div>
+
+    <div id="player-area">
+        <h2>Your Cards</h2>
+        <div class="card-row">
+            <div class="card">[10 ♦]</div>
+            <div class="card">[A ♣]</div>
+        </div>
+    </div>
+
+    <div id="bank-area">
+        <p>💵 Money: $<span id="money">1000</span></p>
+        <label for="bet">Bet Amount: </label>
+        <input type="number" id="bet" value="100" min="10" max="1000" step="10">
+    </div>
+
+    <div id="button-area">
+        <button id="reset-button">Reset</button>
+        <button id="hit-button">Hit</button>
+        <button id="stand-button">Stand</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

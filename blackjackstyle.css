@@ -1,0 +1,136 @@
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff4d4d;
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#bank-area {
+    color: white;
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+#bet {
+    width: 80px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+#dealer-area,
+#player-area {
+    margin-top: 40px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 60px 80px;
+    /* Mega padding = chunky card */
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: "Segoe UI Symbol", "Symbola", serif;
+    font-size: 8rem;
+    /* HUGE symbol */
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    animation: slideIn 0.4s ease;
+    transition: transform 0.2s ease;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 30px 40px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: normal;
+    /* remove boldness */
+    font-family: "Segoe UI Symbol", "Symbola", "Noto Color Emoji", sans-serif;
+    font-size: 5rem;
+    /* still big, but balanced */
+    margin: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.4s ease;
+    transition: transform 0.2s ease;
+    text-align: center;
+    line-height: 1;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 40px 50px;
+    /* Bigger padding for chunkier card */
+    border-radius: 15px;
+    display: inline-block;
+    font-family: "Segoe UI Symbol", "Symbola", serif;
+    font-size: 15rem;
+    /* BIIIIIG Unicode card symbol */
+    margin: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    animation: slideIn 0.4s ease;
+    transition: transform 0.2s ease;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#button-area {
+    margin-top: 50px;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #666;
+}
